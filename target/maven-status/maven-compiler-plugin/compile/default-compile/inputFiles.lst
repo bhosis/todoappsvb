@@ -1,0 +1,9 @@
+/root/todoappsvb/src/main/java/com/company/todoapp/controllers/TodoController.java
+/root/todoappsvb/src/main/java/com/company/todoapp/models/Todo.java
+/root/todoappsvb/src/main/java/com/company/todoapp/repository/TodoJPARepository.java
+/root/todoappsvb/src/main/java/com/company/todoapp/services/repository/TodoStaticService.java
+/root/todoappsvb/src/main/java/com/company/todoapp/services/repository/TodoDBService.java
+/root/todoappsvb/src/main/java/com/company/todoapp/services/ITodoService.java
+/root/todoappsvb/src/main/java/com/company/todoapp/TodoappApplication.java
+/root/todoappsvb/src/main/java/com/company/todoapp/configurations/SecurityConfigurations.java
+/root/todoappsvb/src/main/java/com/company/todoapp/exceptions/TodoNotFoundException.java

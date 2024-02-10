@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  mysql:
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: "2023-08-30T21:49:47.1295528+05:30"
+    description: A Helm chart for mysql database
+    digest: 7530c825c4f3d26e6287f50bc12872cc32cfa2bcde034f696ddea76a4aff2d02
+    name: mysql
+    type: application
+    urls:
+    - mysql-0.1.0.tgz
+    version: 0.1.0
+generated: "2023-08-30T21:49:47.12756+05:30"

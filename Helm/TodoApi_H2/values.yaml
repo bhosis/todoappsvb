@@ -1,0 +1,18 @@
+replicaCount: 1
+
+image:
+  repository: vijaynvb/todoapih2:1.0
+
+service:
+  type: NodePort
+  port: 80
+  name: svctodoh2api
+  targetPort: 80
+
+container:
+  name: todoapi-h2
+
+useGlobalConfig: true  # Controls whether to use global variables or not
+condition:
+  enabled: true
+  disabled: false
