@@ -36,7 +36,7 @@ pipeline {
     stage('Push to Docker Hub') {
       steps {
         script {
-          withDockerRegistry(credentialsId: 'dockerhubcreds', url: 'https://index.docker.io/v1/') {
+          withDockerRegistry(credentialsId: 'DockerHub-Creds', url: 'https://index.docker.io/v1/') {
             def imageTag = "bhosis/todoappsvb:1.0"
             docker.image(imageTag).push()
             echo 'Successfully pushed image to Docker Hub.'
