@@ -27,7 +27,7 @@ pipeline {
     stage('Build jar and image using Docker file ') {
       steps {
         script {
-          def imageTag = "svb-images:svb-todoappsvb"
+          def imageTag = "bhosis/svb-images:svb-todoappsvb"
           docker.build(imageTag, '.')
           echo 'Successfully built Docker image.'
         }
@@ -37,7 +37,7 @@ pipeline {
       steps {
         script {
           withDockerRegistry(credentialsId: 'DockerHub-Creds', url: 'https://index.docker.io/v1/') {
-            def imageTag = "svb-images:svb-todoappsvb"
+            def imageTag = "bhosis/svb-images:svb-todoappsvb"
             docker.image(imageTag).push()
             echo 'Successfully pushed image to Docker Hub.'
           }
