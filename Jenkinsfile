@@ -27,7 +27,7 @@ pipeline {
     stage('Build jar and image using Docker file ') {
       steps {
         script {
-          def imageTag = "todoappsvb:latest"
+          def imageTag = "svb-images:svb-todoappsvb"
           docker.build(imageTag, '.')
           echo 'Successfully built Docker image.'
         }
