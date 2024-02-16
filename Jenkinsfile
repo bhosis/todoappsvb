@@ -12,18 +12,12 @@ pipeline {
         echo 'Successfully checkout code.'
       }
     }
-    /*stage('Build JAR and Package') {
+    stage('Build JAR and Package') {
       steps {
-        withMaven(maven: 'Maven') {
-          sh 'mvn clean install'
-          echo 'Successfully built JAR and package.'
-        }
-        // If you are using vijaynvb/jenkins:2.0 image - Maven is default
-        installed
-        // so you skip the line withMaven(maven: 'Maven') { } - just use
         sh 'mvn clean install'
+        echo 'Successfully built JAR and package.'
       }
-    }*/
+    }
     stage('Build jar and image using Docker file ') {
       steps {
         script {
