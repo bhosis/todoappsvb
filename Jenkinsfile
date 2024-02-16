@@ -14,7 +14,7 @@ pipeline {
     }
     stage('Build JAR and Package') {
       steps {
-        sh 'mvn clean install'
+        mvn clean install
         echo 'Successfully built JAR and package.'
       }
     }
